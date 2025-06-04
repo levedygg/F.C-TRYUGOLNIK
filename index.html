@@ -7,77 +7,81 @@
   <style>
     * {
       box-sizing: border-box;
-    }
-    body {
-      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f0f0f0;
-      color: #333;
+      font-family: Arial, sans-serif;
     }
+
+    body {
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+
     header {
-      background-color: #222;
-      color: #fff;
-      padding: 20px;
+      background: #004080;
+      color: white;
+      padding: 1rem;
       text-align: center;
     }
+
     nav {
-      background-color: #333;
+      background: #003366;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
     }
+
     nav a {
       color: white;
-      padding: 14px 20px;
+      padding: 1rem;
       text-decoration: none;
-      display: block;
     }
+
     nav a:hover {
-      background-color: #555;
+      background: #002244;
     }
-    .container {
-      padding: 20px;
+
+    main {
+      padding: 1rem;
     }
-    .games, .roster, .media {
-      margin-bottom: 40px;
+
+    section {
+      margin-bottom: 2rem;
     }
+
     .game {
-      background-color: #fff;
-      margin-bottom: 10px;
-      padding: 10px;
-      border-radius: 8px;
-      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      background: white;
+      border-radius: 10px;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
+
+    .players {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1rem;
+    }
+
     .player {
-      margin-bottom: 5px;
+      background: white;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
-    .position {
-      font-style: italic;
-      color: #555;
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #004080;
+      color: white;
     }
-    .media a {
-      display: inline-block;
-      margin-top: 10px;
-      color: #0077b5;
-    }
-    .photos {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 10px;
-    }
-    .photos img {
-      width: 100%;
-      max-width: 200px;
-      border-radius: 8px;
-    }
+
     @media (max-width: 600px) {
-      nav {
-        flex-direction: column;
-      }
-      .photos {
-        justify-content: center;
+      nav a {
+        padding: 0.5rem;
+        font-size: 0.9rem;
       }
     }
   </style>
@@ -88,46 +92,40 @@
   </header>
   <nav>
     <a href="#games">Наші ігри</a>
-    <a href="#roster">Склад</a>
-    <a href="#media">Instagram</a>
+    <a href="#squad">Склад команди</a>
   </nav>
-
-  <div class="container">
-    <section id="games" class="games">
+  <main>
+    <section id="games">
       <h2>Наші ігри</h2>
-      <div class="game">TRYUGOLNIK 2:1 Dragons — 01.05.2025, 14:00</div>
-      <div class="game">TRYUGOLNIK 0:3 Hawks — 08.05.2025, 16:00</div>
-      <div class="game">TRYUGOLNIK 1:1 Tigers — 15.05.2025, 18:00</div>
-      <div class="game">TRYUGOLNIK 4:2 Lions — 22.05.2025, 12:00</div>
-      <div class="game">TRYUGOLNIK 3:0 Wolves — 29.05.2025, 17:00</div>
+      <div class="game"><strong>TRYUGOLNIK 2:1 RIVALS</strong><br>Дата: 01.06.2025<br>Час: 17:00</div>
+      <div class="game"><strong>TRYUGOLNIK 0:3 METEOR</strong><br>Дата: 25.05.2025<br>Час: 15:30</div>
+      <div class="game"><strong>TRYUGOLNIK 1:1 TORNADO</strong><br>Дата: 18.05.2025<br>Час: 16:00</div>
+      <div class="game"><strong>TRYUGOLNIK 4:2 FENIX</strong><br>Дата: 11.05.2025<br>Час: 14:00</div>
+      <div class="game"><strong>TRYUGOLNIK 2:2 BLAZERS</strong><br>Дата: 04.05.2025<br>Час: 13:00</div>
     </section>
 
-    <section id="media" class="media">
-      <h2>Фото & Instagram</h2>
-      <div class="photos">
-        <img src="https://via.placeholder.com/200x150" alt="Game photo 1">
-        <img src="https://via.placeholder.com/200x150" alt="Game photo 2">
-        <img src="https://via.placeholder.com/200x150" alt="Game photo 3">
-      </div>
-      <a href="https://www.instagram.com/fc_tryugolnik_/" target="_blank">Перейти в Instagram</a>
-    </section>
-
-    <section id="roster" class="roster">
+    <section id="squad">
       <h2>Склад команди</h2>
-      <div class="player">Forint — 1, <span class="position">Голкіпер (GK)</span></div>
-      <div class="player">Migovk — 4, <span class="position">ЦЗ</span></div>
-      <div class="player">Seleshi — 3, <span class="position">ЦЗ</span></div>
-      <div class="player">Magochi — 6, <span class="position">ЛЗ</span></div>
-      <div class="player">Neboga — 5, <span class="position">ПЗ</span></div>
-      <div class="player">Hudak — 19, <span class="position">ЛП</span></div>
-      <div class="player">Sava — 18, <span class="position">ЦП (Дитина ДЦП)</span></div>
-      <div class="player">Martini — 22, <span class="position">ПП</span></div>
-      <div class="player">Tokach Jr — 11, <span class="position">ЛВ</span></div>
-      <div class="player">Monda — 9, <span class="position">НАП</span></div>
-      <div class="player">Bohashr — 10, <span class="position">ПВ</span></div>
-      <div class="player"><strong>Менеджер:</strong> Bulavinov Jr</div>
-      <div class="player"><strong>Запасні:</strong> усі інші</div>
+      <div class="players">
+        <div class="player">Forint - 1 - GK</div>
+        <div class="player">Migovk - 4 - ЦЗ</div>
+        <div class="player">Seleshi - 3 - ЦЗ</div>
+        <div class="player">Magochi - 6 - ЛЗ</div>
+        <div class="player">Neboga - 5 - ПЗ</div>
+        <div class="player">Hudak - 19 - ЛП</div>
+        <div class="player">Sava - 18 - ЦП (Дитина ДЦП)</div>
+        <div class="player">Martini - 22 - ПП</div>
+        <div class="player">Tokach Jr - 11 - ЛВ</div>
+        <div class="player">Monda - 9 - НАП</div>
+        <div class="player">Bohashr - 10 - ПВ</div>
+        <div class="player"><strong>Менеджер:</strong> Bulavinov Jr</div>
+        <div class="player"><strong>Заміна:</strong> всі інші</div>
+      </div>
     </section>
-  </div>
+  </main>
+  <footer>
+    &copy; 2025 F.C. TRYUGOLNIK. Усі права захищені.
+  </footer>
 </body>
 </html>
+
