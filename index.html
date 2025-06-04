@@ -1,0 +1,116 @@
+!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F.C. TRYUGOLNIK</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #343a40;
+            flex-wrap: wrap;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 1rem;
+            display: block;
+        }
+        nav a:hover {
+            background-color: #495057;
+        }
+        section {
+            padding: 1rem;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .match, .player {
+            background: #fff;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.05);
+        }
+        .player span {
+            display: inline-block;
+            min-width: 120px;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #212529;
+            color: white;
+        }
+        @media (max-width: 600px) {
+            nav a {
+                flex: 1 1 100%;
+                text-align: center;
+            }
+            .player span {
+                display: block;
+                min-width: auto;
+                margin-bottom: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>F.C. TRYUGOLNIK</h1>
+    </header>
+
+    <nav>
+        <a href="#games">Наші ігри</a>
+        <a href="#team">Склад команди</a>
+        <a href="#instagram">Instagram</a>
+    </nav>
+
+    <section id="games">
+        <h2>Наші ігри</h2>
+        <div class="match">TRYUGOLNIK x:x Назва команди<br>Дата: 01.06.2025 | Час: 14:00</div>
+        <div class="match">TRYUGOLNIK x:x Назва команди<br>Дата: 25.05.2025 | Час: 16:00</div>
+        <div class="match">TRYUGOLNIK x:x Назва команди<br>Дата: 20.05.2025 | Час: 18:00</div>
+        <div class="match">TRYUGOLNIK x:x Назва команди<br>Дата: 12.05.2025 | Час: 15:30</div>
+        <div class="match">TRYUGOLNIK x:x Назва команди<br>Дата: 05.05.2025 | Час: 13:00</div>
+    </section>
+
+    <section id="team">
+        <h2>Склад команди</h2>
+        <div class="player"><span>Forint</span> #1, GK</div>
+        <div class="player"><span>Migovk</span> #4, ЦЗ</div>
+        <div class="player"><span>Seleshi</span> #3, ЦЗ</div>
+        <div class="player"><span>Magochi</span> #6, ЛЗ</div>
+        <div class="player"><span>Neboga</span> #5, ПЗ</div>
+        <div class="player"><span>Hudak</span> #19, ЛП</div>
+        <div class="player"><span>Sava</span> #18, ЦП (Дітина ДЦП)</div>
+        <div class="player"><span>Martini</span> #22, ПП</div>
+        <div class="player"><span>Tokach Jr</span> #11, ЛВ</div>
+        <div class="player"><span>Monda</span> #9, НАП</div>
+        <div class="player"><span>Bohashr</span> #10, ПВ</div>
+        <div class="player"><strong>Менеджер:</strong> Bulavinov Jr</div>
+        <div class="player"><strong>Запасні:</strong> Всі інші</div>
+    </section>
+
+    <section id="instagram">
+        <h2>Наш Instagram</h2>
+        <p>Слідкуйте за нами у Instagram: <a href="https://www.instagram.com/fc_tryugolnik_/" target="_blank">@fc_tryugolnik_</a></p>
+    </section>
+
+    <footer>
+        &copy; 2025 F.C. TRYUGOLNIK. Усі права захищені.
+    </footer>
+</body>
+</html>
