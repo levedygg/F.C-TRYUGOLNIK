@@ -16,10 +16,25 @@
       color: #333;
     }
     header {
-      background-color: #222;
-      color: #fff;
-      padding: 20px;
+      background: url('https://scontent-iev1-1.xx.fbcdn.net/v/t1.15752-9/494358427_1368257524455461_624302747076351736_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=0024fc&_nc_ohc=-drNn3FzYnoQ7kNvwHCth9a&_nc_oc=Adk0BMR3PHobXtAi8gw_RZFwf0RIoeeD-ySndn_E9sfP2XVeF_kSeb0VWSJmgTU3vBY&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-iev1-1.xx&oh=03_Q7cD2gG3G82_mtV_tMRVCfh2_kmZfxZGSc6jWbAyMoQZ_2JW2A&oe=6867A05C') no-repeat center center;
+      background-size: cover;
+      color: white;
+      padding: 60px 20px;
       text-align: center;
+      position: relative;
+    }
+    header::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+    header h1 {
+      position: relative;
+      z-index: 2;
+      font-size: 2.5em;
+      margin: 0;
     }
     nav {
       background-color: #333;
@@ -79,6 +94,9 @@
       .photos {
         justify-content: center;
       }
+      header h1 {
+        font-size: 1.8em;
+      }
     }
   </style>
 </head>
@@ -95,7 +113,7 @@
   <div class="container">
     <section id="games" class="games">
       <h2>Наші ігри</h2>
-      <div class="game">F.C. TRYUGOLNIK 5:5 (Пенальті 3:2) ФК Чорнобривці — 25.05.2025/div>
+      <div class="game">F.C. TRYUGOLNIK 5:5 (Пенальті 3:2) ФК Чорнобривці — 25.05.2025</div>
       <div class="game">F.C. TRYUGOLNIK x:x Команда — Дата</div>
       <div class="game">F.C. TRYUGOLNIK x:x Команда — Дата</div>
       <div class="game">F.C. TRYUGOLNIK x:x Команда — Дата</div>
