@@ -50,24 +50,6 @@
       margin-bottom: 2rem;
     }
 
-    .section-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 1rem;
-    }
-
-    .section-header h2 {
-      margin-right: 1rem;
-    }
-
-    .section-header img {
-      width: 100px;
-      height: auto;
-      border-radius: 10px;
-      object-fit: cover;
-    }
-
     .game,
     .player {
       background: white;
@@ -75,6 +57,24 @@
       padding: 1rem;
       margin-bottom: 1rem;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .game-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .game-text {
+      flex: 1;
+    }
+
+    .game-content img {
+      width: 100px;
+      height: auto;
+      border-radius: 8px;
+      object-fit: cover;
     }
 
     .players {
@@ -95,12 +95,12 @@
         font-size: 0.9rem;
       }
 
-      .section-header {
+      .game-content {
         flex-direction: column;
         align-items: flex-start;
       }
 
-      .section-header img {
+      .game-content img {
         margin-top: 0.5rem;
       }
     }
@@ -116,11 +116,16 @@
   </nav>
   <main>
     <section id="games">
-      <div class="section-header">
-        <h2>Наші ігри</h2>
-        <img src="https://via.placeholder.com/100" alt="Фото команди">
+      <h2>Наші ігри</h2>
+      <div class="game">
+        <div class="game-content">
+          <div class="game-text">
+            <strong>F.C. TRYUGOLNIK 5:5 Ф.К. Чорновбривці</strong><br>
+            Дата: 25.05.2025
+          </div>
+          <img src="photo_2025-06-04_13-44-25.jpg" alt="Фото гри">
+        </div>
       </div>
-      <div class="game"><strong>F.C. TRYUGOLNIK 5:5 Ф.К. Чорновбривці</strong><br>Дата: 25.05.2025</div>
     </section>
 
     <section id="squad">
@@ -128,12 +133,12 @@
       <div class="players">
         <div class="player">Forint - 1 - GK</div>
         <div class="player">Migovk - 4 - ЦЗ</div>
-        <div class="player">Seleshi - 15 - ЦЗ</div>
+        <div class="player">Seleshi - 12 - ЦЗ</div>
         <div class="player">Magochi - 6 - ЛЗ</div>
         <div class="player">Neboga - 5 - ПЗ</div>
         <div class="player">Hudak - 19 - ЛП</div>
-        <div class="player">Sava - 18 - ЦП (Дитина ДЦП)</div>
-        <div class="player">Martini - 4 - ПП</div>
+        <div class="player">Sava - 18 - ЦП </div>
+        <div class="player">Martini - 2 - ПП</div>
         <div class="player">Tokach Jr - 11 - ЛВ</div>
         <div class="player">Monda - 9 - НАП</div>
         <div class="player">Bohashr - 10 - ПВ</div>
@@ -147,4 +152,5 @@
   </footer>
 </body>
 </html>
+
 
