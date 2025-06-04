@@ -50,7 +50,26 @@
       margin-bottom: 2rem;
     }
 
-    .game {
+    .section-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+    }
+
+    .section-header h2 {
+      margin-right: 1rem;
+    }
+
+    .section-header img {
+      width: 100px;
+      height: auto;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    .game,
+    .player {
       background: white;
       border-radius: 10px;
       padding: 1rem;
@@ -59,16 +78,9 @@
     }
 
     .players {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-      gap: 1rem;
+      display: flex;
+      flex-direction: column;
     }
-
-   .players {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
 
     footer {
       text-align: center;
@@ -76,17 +88,20 @@
       background: #004080;
       color: white;
     }
-.players {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
 
     @media (max-width: 600px) {
       nav a {
         padding: 0.5rem;
         font-size: 0.9rem;
+      }
+
+      .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .section-header img {
+        margin-top: 0.5rem;
       }
     }
   </style>
@@ -101,8 +116,13 @@
   </nav>
   <main>
     <section id="games">
-      <h2>Наші ігри</h2>
+      <div class="section-header">
+        <h2>Наші ігри</h2>
+        <img src="https://via.placeholder.com/100" alt="Фото команди">
+      </div>
       <div class="game"><strong>F.C. TRYUGOLNIK 5:5 Ф.К. Чорновбривці</strong><br>Дата: 25.05.2025</div>
+    </section>
+
     <section id="squad">
       <h2>Склад команди</h2>
       <div class="players">
